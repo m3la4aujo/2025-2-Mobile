@@ -2,8 +2,12 @@ import 'dart:io';
 
 
     void main(){
-        int idade = 18;
+  
+        print('informe sua idade:');
+        int idade = int.parse( stdin.readLineSync()!);
+
         if (idade >= 16)
+
         {
             print('Você pode votar!!');
 
