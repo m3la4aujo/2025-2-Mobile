@@ -6,7 +6,8 @@
 
         @override // faz uma sobscrita do método
         String toString(){
-            return 'Produto: $nome - Valor: R\$ ${valorUnitario.toStringAsfixed(2)}';
+            return 'Produto: $nome - Valor: R\$ ${valorUnitario.toStringAsfixed(2)}';//toStringAsfixed pega o numero e imprime em tantas casas decimais 
+            
 
         }
 
