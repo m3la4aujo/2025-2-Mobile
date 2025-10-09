@@ -1,23 +1,21 @@
 import 'produto.dart';
-
-class InterCompra{
+class ItemCompra{
     Produto produto;
-    int quartidade;
+    int quantidade;
 
-    ItemCompra(this.produto, this.quartidade);
+    ItemCompra(this.produto, this.quantidade);
 
     double calcularSubTotal(){
-        return quartidade * produto.valorUnitario; //sempre que eu quiser o subtotal é só chamar o calcularSubTotal
-
+        return quantidade * produto.valorUnitario;
     }
+
     @override
     String toString(){
         return '''
-        ${produto.nome} - ${quartidade} unid. X 
-        R\$ ${produto.valorUnitario.toStringAsFixed(2)} = // toStringAsFixed arredonda as casas decimais
-        R\$ ${calcularSubTotal().toStringAsFixed(2)} // o $ serve para substituir a "variavel"
+        ${produto.nome} - ${quantidade} unid. X 
+        R\$ ${produto.valorUnitario.toStringAsFixed(2)} =
+        R\$ ${calcularSubTotal().toStringAsFixed(2)}
         ''';
-
+        
     }
-
 }

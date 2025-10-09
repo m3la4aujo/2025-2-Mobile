@@ -1,18 +1,5 @@
-//import 'dart:io';
-    
-    void main() {
-
+import 'pdv_app.dart';
+void main () {
+        PDVApp app = PDVApp ();
+        app.iniciar();
 }
-    class Produto {
-        String nome;
-        double valorUnitario;
-
-        Produto(this.nome, this.valorUnitario);
-
-        @override
-        String toString(){
-            Return 'Produto: $nome - Valor: R\$ ${valorUnitario.toStringAsfixed(2)}';
-
-        }
-
-    }
